@@ -27,11 +27,17 @@ The system recommends the most suitable crop and shows prediction confidence.
 ## 🚀 Features
 
 ✅ Crop Prediction using Machine Learning 
+
 ✅ ANN vs Random Forest model comparison  
+
 ✅ Real time prediction through Streamlit UI 
+
 ✅ Prediction confidence score  
+
 ✅ Clean and responsive interface  
-✅ Preprocessing using scaler and label encoder   
+
+✅ Preprocessing using scaler and label encoder 
+  
 ✅ Model persistence with pickle files  
 
 ---
