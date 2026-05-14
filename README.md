@@ -98,7 +98,6 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/nandi-boy/Crop-Recommendation-System.git
-cd Crop-Recommendation-System
 ```
 
 Create virtual environment:
