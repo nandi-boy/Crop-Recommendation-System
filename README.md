@@ -57,7 +57,7 @@ The system recommends the most suitable crop and shows prediction confidence.
 ## 📊 Model Accuracy Comparison
 
 | Model | Accuracy |
-|---|---|
+|----|----|
 | Random Forest | 99.31% |
 | ANN | 97.95% |
 
@@ -98,7 +98,6 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/nandi-boy/Crop-Recommendation-System.git
-cd Crop-Recommendation-System
 ```
 
 Create virtual environment:
