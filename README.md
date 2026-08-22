@@ -29,7 +29,7 @@ The State-Based mode originally used live weather + averaged soil values fed int
 
 ### 🌍 State-Based Mode
 - Select Country → State → District → Season (Kharif/Rabi)
-- Ranks the top 3 crops by their real historical share of recorded production/area for that district and season, sourced from government crop statistics (1997–2015)
+- Ranks the top 3 crops by their real historical share of recorded production/area for that district and season, sourced from government crop statistics 
 - Does **not** use the ML model — this is a statistics lookup against real records, not a prediction
 
 ### 🌱 Crop Care Guide
