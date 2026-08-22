@@ -176,5 +176,5 @@ Being upfront about these — they're arguably the most interesting part of this
 
 **Ayan Nandi**
 
-GitHub: https://github.com/nandi-boy
-LinkedIn: https://www.linkedin.com/in/ayan-nandi/
+- GitHub: https://github.com/nandi-boy
+- LinkedIn: https://www.linkedin.com/in/ayan-nandi/
