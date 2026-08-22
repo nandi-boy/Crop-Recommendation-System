@@ -14,7 +14,6 @@ This isn't a single-model demo. It's three distinct systems, each answering the 
 | 🌍 **State-Based** | Real historical government crop-production statistics, ranked by district + season | When you don't have soil data, but want to know what's actually, historically been grown in your district |
 | 🌱 **Crop Care Guide** | Dataset-derived N/P/K/temperature requirements + fertilizer guidance + farming process, in 12 Indian languages | Once you've picked a crop, and need to know how to actually grow it |
 
-The State-Based mode originally used live weather + averaged soil values fed into the same ML model. That approach was tested and **broken by design**: averaging soil to a dataset-wide constant collapsed the model's output to a handful of crops regardless of location — a well-known rice-growing district like Bardhaman would never predict rice, because the averaged Nitrogen input was ~37% below what rice actually needs. Rather than patch around that, State-Based mode was rebuilt on real historical production data instead — a different, more honest mechanism for a case where the ML approach fundamentally didn't fit.
 
 ---
 
