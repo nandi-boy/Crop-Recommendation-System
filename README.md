@@ -1,7 +1,5 @@
 # 🌱 Krishi Sahayak — AI-Powered Crop Advisory System
 
-*(Working name — swap the H1 above if you'd rather use AgroSense, Fasal Mitra, or something else.)*
-
 A multi-modal agricultural advisory platform that helps a farmer decide **what to grow** and **how to grow it** — combining a trained machine learning model, real historical government crop-production data, and a multilingual crop-care reference guide, all through an interactive Streamlit app.
 
 This isn't a single-model demo. It's three distinct systems, each answering the same "what should I grow" question with a different, deliberately-chosen mechanism — and each one exists because the previous approach was tested, found lacking for a specific real reason, and replaced rather than patched over.
@@ -13,7 +11,7 @@ This isn't a single-model demo. It's three distinct systems, each answering the 
 | Mode | Mechanism | Best for |
 |---|---|---|
 | 🌾 **Parameter-Based** | Trained ML model (Random Forest) on soil + climate | When you have real soil test values (N, P, K, pH) and climate readings |
-| 🌍 **State-Based** | Real historical government crop-production statistics (1997–2015), ranked by district + season | When you don't have soil data, but want to know what's actually, historically been grown in your district |
+| 🌍 **State-Based** | Real historical government crop-production statistics, ranked by district + season | When you don't have soil data, but want to know what's actually, historically been grown in your district |
 | 🌱 **Crop Care Guide** | Dataset-derived N/P/K/temperature requirements + fertilizer guidance + farming process, in 12 Indian languages | Once you've picked a crop, and need to know how to actually grow it |
 
 The State-Based mode originally used live weather + averaged soil values fed into the same ML model. That approach was tested and **broken by design**: averaging soil to a dataset-wide constant collapsed the model's output to a handful of crops regardless of location — a well-known rice-growing district like Bardhaman would never predict rice, because the averaged Nitrogen input was ~37% below what rice actually needs. Rather than patch around that, State-Based mode was rebuilt on real historical production data instead — a different, more honest mechanism for a case where the ML approach fundamentally didn't fit.
@@ -29,7 +27,7 @@ The State-Based mode originally used live weather + averaged soil values fed int
 
 ### 🌍 State-Based Mode
 - Select Country → State → District → Season (Kharif/Rabi)
-- Ranks the top 3 crops by their real historical share of recorded production/area for that district and season, sourced from government crop statistics (1997–2015)
+- Ranks the top 3 crops by their real historical share of recorded production/area for that district and season, sourced from government crop statistics 
 - Does **not** use the ML model — this is a statistics lookup against real records, not a prediction
 
 ### 🌱 Crop Care Guide
@@ -65,7 +63,7 @@ Trained on a 2,200-row dataset (22 crops, 100 samples each, no class imbalance) 
 ## 📂 Project Structure
 
 ```
-Crop-Recommendation-System/
+Krishi-Sahayak/
 │
 ├── app.py                              # Main Streamlit app (all 3 modes)
 ├── crop_care.py                        # Crop Care Guide: N/P/K/temp lookup, fertilizer guidance, farming steps
@@ -98,8 +96,8 @@ Crop-Recommendation-System/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/nandi-boy/Crop-Recommendation-System.git
-cd Crop-Recommendation-System
+git clone https://github.com/nandi-boy/Krishi-Sahayak.git
+cd Krishi-Sahayak
 ```
 
 ### 2. Create and activate a virtual environment
@@ -176,5 +174,5 @@ Being upfront about these — they're arguably the most interesting part of this
 
 **Ayan Nandi**
 
-GitHub: https://github.com/nandi-boy
-LinkedIn: https://www.linkedin.com/in/ayan-nandi/
+- GitHub: https://github.com/nandi-boy
+- LinkedIn: https://www.linkedin.com/in/ayan-nandi/
